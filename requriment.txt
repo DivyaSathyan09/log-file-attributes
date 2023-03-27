@@ -1,0 +1,24 @@
+POC Tasks
+1) Write a Spring Boot - maven application.
+2) Read a big file using java.nio package or any other package. 
+    Read line by line and get the date/time part using regular expression.
+    Capture the time taken to process a file. This is needed for us to know the performance and finalize the best package to be used for file reading.
+3.1) sort records based on date/time in memory.
+3.2) Create a DB in sql server DB with columns FileName, Date/time, lineText, insertedDateTime, batchNumber
+
+ 
+
+4) Insert the lines from file in DB.
+5) Read all the records for a given batchNumber and order by Date/time column and insert all records in a new file.
+    Delete all records from the table after creating the file.
+
+ 
+
+Notes:
+    1) Property file shud have following entries
+        i.   file types supported
+        ii.  Date/Time regex pattern for each file type.
+        iii. Location of input file
+        iv.  Location of output file.
+    2) Program should have a logger
+    3) Program should log the time taken to process the file in the log file.
